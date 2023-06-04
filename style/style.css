@@ -50,6 +50,9 @@ input[type="number"] {
   outline: none;
 }
 
+h1 {
+  display: none;
+}
 main {
   width: 560px;
   padding: 30px;

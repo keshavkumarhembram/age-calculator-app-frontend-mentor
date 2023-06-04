@@ -1,0 +1,264 @@
+/* GLOBAL */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS VARIABLES */
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+  --light-red: hsl(0, 100%, 67%);
+}
+
+/* FONT */
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: url(../assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url(../assets/fonts/Poppins-Italic.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  font-family: Poppins-Bold;
+  color: var(--off-black);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+  border: none;
+  outline: none;
+}
+
+main {
+  width: 560px;
+  padding: 30px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 3% 3% 30% 3%;
+}
+
+/* FORM */
+.birth-day-inputs {
+  display: flex;
+  align-items: baseline;
+}
+.input {
+  display: flex;
+  margin: 8px;
+  flex-direction: column;
+}
+
+.input p {
+  display: block;
+  font-family: "Poppins-Italic";
+  font-size: 11px;
+  padding-top: 8px;
+  color: var(--light-red);
+}
+
+.input label {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: hsl(0, 1%, 44%);
+  padding-bottom: 8px;
+}
+
+.input input {
+  width: 100px;
+  padding: 6px 16px 6px 16px;
+  letter-spacing: 3px;
+  font-size: 32px;
+  font-weight: bold;
+  border: 2px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+  font-family: "Poppins-Bold";
+}
+
+/* INPUT - EVENT */
+.error input {
+  border-color: var(--light-red);
+}
+
+.error label {
+  color: var(--light-red);
+}
+
+.input input:hover {
+  cursor: pointer;
+}
+
+.input input:focus {
+  border-color: var(--purple);
+  caret-color: var(--purple);
+}
+
+/* SUBMIT */
+.submit {
+  position: relative;
+  height: 80px;
+}
+
+.submit hr {
+  position: absolute;
+  width: 90%;
+  left: 0px;
+  top: 40px;
+}
+
+.submit button {
+  position: absolute;
+  right: 0px;
+  border: none;
+  border-radius: 50%;
+  padding: 18px;
+  background-color: var(--purple);
+}
+
+.submit button:hover {
+  background-color: var(--off-black);
+  cursor: pointer;
+}
+
+
+/* OUTPUT */
+.output {
+  font-size: 76px;
+  font-family: "Poppins-ExtraBoldItalic";
+  margin-bottom: 30px;
+}
+
+.output p {
+  margin-bottom: -30px;
+}
+
+.output span {
+  color: var(--purple);
+}
+
+.output-animation {
+  animation: pop 0.5s ease-in-out infinite alternate;
+}
+
+
+/* FOOTER */
+.attribution {
+  position: absolute;
+  bottom: 0px;
+}
+
+
+@keyframes pop {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 76px;
+  }
+}
+
+/* ******************** SCREEN WIDTH ************************ */
+@media only screen and (max-width: 900px) {
+  main {
+    width: 400px;
+    padding: 25px;
+  }
+
+  .input label {
+    font-size: 10px;
+  }
+
+  .input input {
+    width: 80px;
+    padding: 5px 14px 5px 14px;
+    font-size: 20px;
+  }
+
+  .submit button {
+    padding: 15px;
+  }
+
+  .output {
+    font-size: 60px;
+  }
+
+  @keyframes pop {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 60px;
+  }
+}
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    width: 280px;
+    padding: 15px;
+  }
+
+  .input input {
+    width: 60px;
+    padding: 3px 6px 3px 6px;
+    font-size: 18px;
+  }
+
+  .output {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .output p {
+    margin-bottom: -20px;
+  }
+
+  .submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .submit img {
+    height: 25px;
+  }
+
+  .submit hr {
+    position: absolute;
+    width: 100%;
+  }
+
+  .submit button {
+    position: relative;
+    padding: 12px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  @keyframes pop {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 45px;
+  }
+  
+}
+}

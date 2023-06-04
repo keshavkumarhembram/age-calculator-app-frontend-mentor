@@ -14,7 +14,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -43,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/keshavkumarhembram/age-calculator-app-frontend-mentor)
+- Live Site URL: [Age calcultor](https://keshavkumarhembram.github.io/age-calculator-app-frontend-mentor/)
 
 ## My process
 
@@ -108,4 +107,3 @@ input[type=number] {
 - Twitter - [@keshavhembram](https://twitter.com/keshavhembram)
 
 
-# age-calculator-app-frontend-mentor
